@@ -3,96 +3,66 @@
 
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css?v=1.1" />
+    <title>~/startpage</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
     <link rel="icon" href="favicon_newtabpage.png" type="image/png" crossorigin="anonymous" sizes="32x32">
-    <title>Welcome back, Phong</title>
-    <script src="moment.js"></script>
-    <script src="premain.js?v=1.0"></script>
-
 </head>
 
 <body>
-    <div id="image-wrapper" class="clickable">
-        <div id="background-image" class="fill-container-width fill-container-height"></div>
-    </div>
-    <div id="content">
-        <div id="start-page" data-visibility="visible" class="fill-container-width fill-container-height">
-            <div id="status-bar">
-                <div id="dropdown" class="fill-container-height">
-                    <div id="current-search-selection" class="secondary-popup general-wrapper fill-container-height">
-                        <img src="./Icons/General/chevron-down.svg" id="current-search-type__icon"
-                            class="secondary-icon">
-                        <div id="dropdown__button">
-                            <p id="username">User</p>
-                            <p id="username__separator">=></p>
-                            <p id="current-search-type__text">XXXXXXX</p>
-                        </div>
-                    </div>
-                    <div id="dropdown__menu" class="secondary-popup" data-visibility="invisible"></div>
-                </div>
-                <div id="input__wrapper">
-                    <input type="text" id="search-input" class="fill-container-width input"
-                        autocomplete="off">
-                    <p id="suggestion-text" class="secondary-popup"></p>
-                </div>
-                <div id="info" class="general-wrapper general-gap">
-                    <p id="time">XX:XX XX</p>
-                    <div class="vertical-separator"></div>
-                    <p id="date">XXX XX</p>
-                    <div class="vertical-separator"></div>
-                    <div id="weather" class="general-wrapper general-gap">
-                        <img src="./Icons/Weather/sun.svg" alt="" id="weather__icon">
-                        <p id="weather__text">XX°F</p>
-                    </div>
-                </div>
+    <div class="container">
+        <div class="left-container">
+            <div class="png">
+                <img src="grid_0.png" />
             </div>
-            <div class="horizontal-separator"></div>
-            <div class="bookmarks" id="bookmarks"></div>
-            <img src="./Icons/General/cog.svg" alt="" id="settings-icon" class="primary-icon">
         </div>
 
-        <div id="settings" data-visibility="invisible">
-            <div id="nav-bar">
-                <a id="settings__nav-bar__links">
-                    <h2>Links</h2>
-                </a>
-                <a id="settings__nav-bar__general">
-                    <h2>General Settings</h2>
-                </a>
-                <a id="settings__nav-bar__howto">
-                    <h2>How To Use</h2>
-                </a>
-                <a><img src="Icons/General/x.svg" alt="" id="settings-close" class="primary-icon"></a>
+        <div class="right-container">
+            <div class="head">
+                <p><span>(</span><a id="link_fb" href="https://www.facebook.com/ph.5217/" style="color:#a6adba"><span>phong@m4pl3</span></a>)-[~]-><span class="blinking">_</span></p>
             </div>
 
-            <div id="general-settings" data-visibility="invisible">
-            </div>
-            <div id="links" data-visibility="invisible">
-                <div class="info clickable secondary-popup" id="links__settings-add-section">
-                    <img src="Icons/General/plus-circle.svg" class="secondary-icon">
-                    <h2>Add Section</h2>
+            <div class="bookmarks">
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><a style="color: #a6adba" href="https://www.hcmus.edu.vn/">emiuHCMUS</a></li>
+                        <li><a href="https://portal5.hcmus.edu.vn">f4ck1ng p0rtal</a></li>
+                        <li><a href="https://courses.fit.hcmus.edu.vn">FIT moodle</a></li>
+                        <li><a href="https://courses.hcmus.edu.vn">global moodle</a></li>
+                        <li><a href="https://www.fit.hcmus.edu.vn/">FITnews</a></li>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="links">
+                        <li class="title">work</li>
+                        <li><a href="https://gmail.com">gmail</a></li>
+                        <li><a href="https://outlook.office.com">outlook</a></li>
+                        <li><a href="https://linkedin.com">linkedin</a></li>
+                        <li><a href="https://vim.rtorr.com/">vim</a></li>
+                    </div>
+                </div>
+                <div class="category">
+                    <div class="links">
+                        <li class="title">dev</li>
+                        <li><a href="https://github.com/">github</a></li>
+                        <li><a href="https://lobste.rs/">lobste.rs</a></li>
+                        <li><a href="https://mankier.com/">mankier</a></li>
+                        <li><a href="https://devdocs.io/">devdocs</a></li>
+                    </div>
                 </div>
 
-                <div id="links_settings-save" class="secondary-popup currently_selected info save_button">
-                    <img class="secondary-icon" src="Icons/General/save.svg">
-                    <h2>Save</h2>
+                <div class="category">
+                    <div class="links">
+                        <li class="title"><a style="color: #a6adba" href="https://reddit.com">reddit</a></li>
+                        <li><a href="https://reddit.com/r/programming/">programming</a></li>
+                        <li><a href="https://reddit.com/r/selfhosted/">selfhosted</a></li>
+                        <li><a href="https://reddit.com/r/unixporn/">unixporn</a></li>
+                        <li><a href="https://reddit.com/r/mechanicalkeyboards/">mk</a></li>
+                    </div>
                 </div>
-            </div>
-            <div id="how-to-use" data-visibility="invisible">
-            </div>
 
+            </div>
         </div>
     </div>
-
-    <!-- <script src="https://cdnjs.cloudflare.com/ajax/libs/color-thief/2.3.0/color-thief.umd.js"></script> -->
-    <script src="cdnjs.cloudflare.com_ajax_libs_color-thief_2.3.0_color-thief.umd.js"></script>
-    <!-- <script type="text/javascript" src="https://SortableJS.github.io/Sortable/Sortable.js"></script> -->
-    <script type="text/javascript" src="sortablejs.github.io_Sortable_Sortable.js"></script>
-    <script src="postmain.js"></script>
-    <script src="commands.js"></script>
-    <script src="settings.js"></script>
 </body>
 
 </html>
